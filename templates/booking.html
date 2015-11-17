@@ -1,0 +1,17 @@
+<h2>Meet Mr Michael</h2>
+
+<div class="ui input">
+	
+</div>
+<div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources"></div> 
+
+<div class="ui modal" id="book">
+	<div class="content">
+		{{user}} wants to book Mr Michael's consult at {{thisdate.toDateString()}} at {{thistime[1]}}.
+	</div>
+	<div class="actions">
+	<button class="ui orange button" ng-click="closeModal()">Cancel</button>
+		<button class="ui red button" ng-click="book()">Book</button>
+	</div>
+
+</div>
